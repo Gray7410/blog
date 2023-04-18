@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import { AboutPage } from 'pages/AboutPage';
 import { MainPage } from 'pages/MainPage';
 import { routeConfig } from 'shared/config/routeConfig/routeConfig';
-import {PageLoader} from "widgets/PageLoader/ui/PageLoader";
+import { PageLoader } from 'widgets/PageLoader/ui/PageLoader';
 
 const AppRouter = () => (
     <Routes>
