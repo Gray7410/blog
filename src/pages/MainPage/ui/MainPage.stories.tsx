@@ -16,7 +16,7 @@ export default {
     decorators: [ThemeDecorator(Theme.LIGHT), RouterDecorator],
 } as ComponentMeta<typeof MainPage>;
 
-const Template: ComponentStory<typeof MainPage> = (args) => <MainPage {...args} />;
+const Template: ComponentStory<typeof MainPage> = (args) => <MainPage {...(args as object)} />;
 
 export const Normal = Template.bind({});
 Normal.args = {};

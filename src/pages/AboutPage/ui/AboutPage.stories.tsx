@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {FC} from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
 
@@ -16,7 +16,7 @@ export default {
     decorators: [ThemeDecorator(Theme.LIGHT), RouterDecorator],
 } as ComponentMeta<typeof AboutPage>;
 
-const Template: ComponentStory<typeof AboutPage> = (args) => <AboutPage {...args} />;
+const Template: ComponentStory<typeof AboutPage> = (args) => <AboutPage {...(args as object)} />;
 
 export const Normal = Template.bind({});
 Normal.args = {};
