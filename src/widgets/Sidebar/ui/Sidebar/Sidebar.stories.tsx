@@ -4,6 +4,7 @@ import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDeco
 
 import { Theme } from 'app/providers/ThemeProvider';
 import 'app/styles/index.scss';
+import { RouterDecorator } from 'shared/config/storybook/RouterDecorator/RouterDecorator';
 import { Sidebar } from './Sidebar';
 
 export default {
@@ -12,6 +13,7 @@ export default {
     argTypes: {
         backgroundColor: { control: 'color' },
     },
+    decorators: [RouterDecorator, ThemeDecorator(Theme.LIGHT)],
 } as ComponentMeta<typeof Sidebar>;
 
 const Template: ComponentStory<typeof Sidebar> = (args) => <Sidebar {...args} />;
