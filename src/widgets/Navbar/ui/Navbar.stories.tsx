@@ -5,6 +5,7 @@ import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDeco
 import { Theme } from 'app/providers/ThemeProvider';
 import 'app/styles/index.scss';
 import { RouterDecorator } from 'shared/config/storybook/RouterDecorator/RouterDecorator';
+import { StoreDecorator } from 'shared/config/storybook/StoreDecorator/StoreDecorator';
 import { Navbar } from './Navbar';
 
 export default {
@@ -20,8 +21,14 @@ const Template: ComponentStory<typeof Navbar> = (args) => <Navbar {...args} />;
 
 export const Light = Template.bind({});
 Light.args = {};
+Light.decorators = [StoreDecorator({})];
 
 export const Dark = Template.bind({});
 Dark.args = {};
+Dark.decorators = [ThemeDecorator(Theme.DARK), StoreDecorator({})];
 
-Dark.decorators = [ThemeDecorator(Theme.DARK)];
+export const AuthData = Template.bind({});
+AuthData.args = {};
+AuthData.decorators = [ThemeDecorator(Theme.DARK), StoreDecorator({
+    user: { authData: {} },
+})];
