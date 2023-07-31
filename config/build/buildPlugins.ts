@@ -19,7 +19,6 @@ export function buildPlugins({ paths, isDev }: BuildOptions): webpack.WebpackPlu
         }),
 
     ];
-
     if (isDev) {
         plugins.push(new BundleAnalyzerPlugin({
             openAnalyzer: false,
