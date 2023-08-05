@@ -8,5 +8,14 @@
   "users": [
     { "id": "1", "username": "admin", "password": "123" }
   ],
-  "profile": { "name": "typicode" }
+  "profile": {
+    "name": "Сергей",
+    "lastname": "",
+    "age": "28",
+    "currency": "RUB",
+    "country": "Russia",
+    "city": "Yekaterinburg",
+    "username": "admin",
+    "avatar": "https://cdn.discordapp.com/icons/730414144788103189/380588af1896ad9d608b5cdab40fc709.png?size=128"
+  }
 }
