@@ -9,8 +9,8 @@
     { "id": "1", "username": "admin", "password": "123" }
   ],
   "profile": {
-    "name": "Сергей",
-    "lastname": "",
+    "firstname": "Сергей",
+    "lastname": "Фомин",
     "age": "28",
     "currency": "RUB",
     "country": "Russia",
