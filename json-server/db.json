@@ -1,17 +1,29 @@
 {
   "posts": [
-    { "id": "1", "title": "json-server", "author": "typicode" }
+    {
+      "id": "1",
+      "title": "json-server",
+      "author": "typicode"
+    }
   ],
   "comments": [
-    { "id": "1", "body": "some comment", "postId": "1" }
+    {
+      "id": "1",
+      "body": "some comment",
+      "postId": "1"
+    }
   ],
   "users": [
-    { "id": "1", "username": "admin", "password": "123" }
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "123"
+    }
   ],
   "profile": {
     "firstname": "Сергей",
     "lastname": "Фомин",
-    "age": "28",
+    "age": 28,
     "currency": "RUB",
     "country": "Russia",
     "city": "Yekaterinburg",
