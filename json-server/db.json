@@ -101,7 +101,9 @@
     {
       "id": "1",
       "username": "admin",
-      "password": "123"
+      "password": "123",
+      "avatar": "https://cdn.discordapp.com/icons/730414144788103189/380588af1896ad9d608b5cdab40fc709.png?size=128"
+
     }
   ],
   "profile": {

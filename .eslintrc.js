@@ -48,6 +48,7 @@ module.exports = {
         }],
         'max-len': ['error', {
             ignoreComments: true,
+            ignoreStrings: true,
             code: 100,
         }],
         'jsx-a11y/no-static-element-interactions': 'off',
